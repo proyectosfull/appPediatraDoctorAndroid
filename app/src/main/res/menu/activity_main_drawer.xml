@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/inicio"
+            android:title="@string/nav_inicio"/>
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/perfil"
+            android:title="@string/nav_perfil" />
+        <item
+            android:id="@+id/nav_citasPendientes"
+            android:icon="@drawable/cpendientes"
+            android:title="@string/nav_citas_pendientes" />
+        <item
+            android:id="@+id/nav_citasRealizadas"
+            android:icon="@drawable/crealizadas"
+            android:title="@string/nav_citas_realizadas" />
+
+        <item
+            android:id="@+id/nav_pagos"
+            android:icon="@drawable/pagos"
+            android:title="@string/nav_pagos_recibidos" />
+    </group>
+
+    <group
+        android:id="@+id/group_menu">
+        <item
+            android:id="@+id/nav_cerrar_sesion"
+            android:icon="@drawable/salir"
+            android:title="Cerrar sesión" />
+    </group>
+</menu>

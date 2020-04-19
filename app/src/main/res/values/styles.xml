@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@color/dark_transparent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="primaryButton">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="AccentButton">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:drawableTint">#FFFFFF</item>
+    </style>
+
+    <style name="Base.Widget.AppCompat.Button.Borderless.Primary">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Base.Widget.AppCompat.Button.Borderless.Accent">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="offline">
+        <item name="android:backgroundTint">#ffffff</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/error</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:text">Por pavor, ingrese su contraseña actual</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="TableLayoutStyle">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="ProgressBarStyle" parent="@android:style/Widget.ProgressBar.Horizontal"/>
+</resources>

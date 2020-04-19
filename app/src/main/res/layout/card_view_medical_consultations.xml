@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingTop="5dp"
+    android:paddingRight="8dp">
+
+    <!-- Cardview desing -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_citap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/img_pasciente"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_margin="0dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/usericon" />
+
+            <!-- Information container -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Patient name -->
+                <TextView
+                    android:id="@+id/txv_nombreUsuario"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/CV_Usuariodirecto"
+                    android:textSize="@dimen/text_cart"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- User name and relationship -->
+                <TextView
+                    android:id="@+id/txv_dependiente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/CV_PacienteParentezco"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txv_nombreUsuario"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

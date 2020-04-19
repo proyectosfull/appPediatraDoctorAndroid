@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.ProfessionalProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin">
+
+        <!-- Cambiar contraseña -->
+        <TextView
+            android:id="@+id/ImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/textSpace"
+            android:paddingBottom="@dimen/textSpace"
+            android:text="@string/perfil_cambiar_contrase_a"
+            android:textSize="@dimen/text_descriptive"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contraseña_actual_aye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/contraseña_actual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_contrase_a_actual"
+                android:inputType="textPassword"
+                android:textSize="@dimen/textImput" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contraseña_nueva_aye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/contraseña_actual"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/contraseña_nueva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_nueva_contrase_a"
+                android:inputType="textPassword"
+                android:textSize="@dimen/textImput" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/edit_password"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:gravity="right"
+            android:src="@drawable/hecho" />
+
+        <!-- Agregar Pernonales -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/textSpace"
+            android:paddingBottom="15dp"
+            android:text="@string/perfil_editar_personales"
+            android:textSize="@dimen/text_descriptive"
+            android:textStyle="bold" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/nuevo_personal"
+            android:layout_width="@dimen/image_perfil"
+            android:layout_height="@dimen/image_perfil"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/textSpace"
+            android:scaleType="fitXY"
+            android:src="@drawable/userp"
+            app:riv_corner_radius="90dp"
+            app:riv_mutate_background="false"
+            android:layout_marginBottom="8dp"
+            app:riv_oval="false" />
+
+        <Button
+            android:id="@+id/selfie_nuevoPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#1E85DD"
+            android:text="@string/perfil_fotograf_a" />
+
+        <!--<com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nombre_nuevoPersonal_aye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/apellido_nevoPersonal">
+
+            <EditText
+                android:id="@+id/nombre_nuevoPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_nombre_s"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/textImput" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/apellido_nevoPersonal_aye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/apellido_nevoPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_apellidos"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/textImput" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/especialidad_nuevoPersonal_aye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/especialidad_nuevoPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_especialidad"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/textImput" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cedula_nuevoPersonal_aye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/cedula_nuevoPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_c_dula"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/textImput" />
+        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/add_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:gravity="right"
+            android:src="@drawable/hecho" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <!-- Editar datos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/textSpace"
+            android:paddingBottom="@dimen/textSpace"
+            android:text="@string/perfil_editar_datos"
+            android:textSize="@dimen/text_descriptive"
+            android:textStyle="bold" />
+
+        <!--<com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lugardeAtencion_datos_aye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/lugardeAtencion_datos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_lugar_de_atenci_n"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/textImput" />
+        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/costo_datos_aye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/costo_datos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_costo"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textSize="@dimen/textImput" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/edit_datos"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:gravity="right"
+            android:src="@drawable/hecho" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Firma: "/>
+
+        <ImageView
+            android:id="@+id/Img_Sing_Doctor"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/s"/>
+
+        <Button
+            android:id="@+id/Button_Sing_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#1E85DD"
+            android:text="@string/perfil_fotograf_a" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingBottom="30dp" />
+    </LinearLayout>
+</ScrollView>

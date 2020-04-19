@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.DescriptionMedicalConsultationsMade">
+
+    <!-- Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin">
+
+        <!-- TextView for show patient name -->
+        <TextView
+            android:id="@+id/DCR_Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/error"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- TextView for shows user name and relationship -->
+        <TextView
+            android:id="@+id/DCR_NameDependienteParentezco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textImput" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dp">
+
+            <!-- ImageView that shows the payment status -->
+            <ImageView
+                android:id="@+id/DCR_MoneyIcon"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/dineroon" />
+
+            <!-- TextView that says the payment is made or not -->
+            <TextView
+                android:id="@+id/DCR_StatusMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textImput"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/QD_FechaDeConsultaS"
+                android:textColor="@color/icon"
+                android:textSize="@dimen/textImput"
+                android:textStyle="bold" />
+
+            <!-- TextView that shows the request date -->
+            <TextView
+                android:id="@+id/DCR_FechaDeConsulta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/QD_FechaDeConsultaA"
+                android:textColor="@color/icon"
+                android:textSize="@dimen/textImput"
+                android:textStyle="bold" />
+
+            <!-- TextView that shows the answered date -->
+            <TextView
+                android:id="@+id/DCR_FechaDeConsultaRealizada"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/QD_PesoTemperatura"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textImput"
+            android:textStyle="bold" />
+
+        <!-- TextView that shows the passenger weight and temperature -->
+        <TextView
+            android:id="@+id/DCR_PesoTemperatura"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/textImput"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/QD_Description"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textImput"
+            android:textStyle="bold" />
+
+        <!-- TextView that shows the description of symptoms -->
+        <TextView
+            android:id="@+id/DCR_Sintomas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:textSize="@dimen/textImput"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/TxvImagenAnexada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/QD_ImgAnexada"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textImput"
+            android:textStyle="bold" />
+
+        <!-- GridView that shows the query images  -->
+        <GridView
+            android:id="@+id/GridViewImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:text="@string/QD_Receta"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textImput"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <!-- Table that shows information about prescription medications -->
+            <TableLayout
+                android:id="@+id/resultOfReceta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="20dp">
+
+                <TableRow android:id="@+id/tableResultReceta">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/QD_Medicamento"
+                        android:textAlignment="center"
+                        android:textColor="@color/chart_overweight"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/QD_Dosis"
+                        android:textAlignment="center"
+                        android:textColor="@color/chart_overweight"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="intevalo"
+                        android:textAlignment="center"
+                        android:textColor="@color/chart_overweight"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/QD_Duracion"
+                        android:textAlignment="center"
+                        android:textColor="@color/chart_overweight"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>

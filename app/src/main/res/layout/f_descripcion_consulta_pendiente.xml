@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.DescriptionMedicalConsultationsPending">
+
+
+    <!-- Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin">
+
+        <!-- TextView for show patient name -->
+        <TextView
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/error"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- TextView for shows user name and relationship -->
+        <TextView
+            android:id="@+id/NameDependienteParentezco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textImput" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dp">
+
+            <!-- ImageView that shows the payment status -->
+            <ImageView
+                android:id="@+id/MoneyIcon"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/dineroon" />
+
+            <!-- TextView that says the payment is made or not -->
+            <TextView
+                android:id="@+id/StatusMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textImput"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/QD_FechaDeConsultaS"
+                android:textColor="@color/icon"
+                android:textSize="@dimen/textImput"
+                android:textStyle="bold" />
+
+            <!-- TextView that shows the request date -->
+            <TextView
+                android:id="@+id/FechaDeConsulta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/textImput"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/QD_PesoTemperatura"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textImput"
+            android:textStyle="bold" />
+
+        <!-- TextView that shows the passenger weight and temperature -->
+        <TextView
+            android:id="@+id/PesoTemperatura"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/textImput"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/QD_Description"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textImput"
+            android:textStyle="bold" />
+
+        <!-- TextView that shows the description of symptoms -->
+        <TextView
+            android:id="@+id/Sintomas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:textSize="@dimen/textImput"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/TxvImagenAnexadaPendiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/QD_ImgAnexada"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textImput"
+            android:textStyle="bold" />
+
+        <!-- GridView that shows the query images  -->
+        <GridView
+            android:id="@+id/GridViewImagesPendientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnWidth="90dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/QD_Nota"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textImput"
+            android:textStyle="bold" />
+
+        <!-- Input for "Nota" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nota_aye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/notaOfPediatra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/DC_describirObservaciones"
+                android:textSize="@dimen/textImput" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:text="@string/QD_Receta"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textImput"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Seleccionar una predeterminada" />
+
+        <!-- Spinner that show the predetermined medical prescriptionss -->
+        <Spinner
+            android:id="@+id/prescripionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
+        </Spinner>
+
+        <!-- Input for "Medicamento" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/medicamento_aye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/medicamentoOfPediatra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/DC_medicamento"
+                android:textSize="@dimen/textImput" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input for "Dósis" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dosis_aye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/dosisOfPediatra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/DC_dosis"
+                android:textSize="@dimen/textImput" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input for "Intervalo de tiempo" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/intervalo_aye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/intervaloOfPediatra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/DC_intervalo_de_tiempo"
+                android:textSize="@dimen/textImput" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input for "Duración" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/duracion_aye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/duraciónOfPediatra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/DC_duración"
+                android:textSize="@dimen/textImput" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/add_medicamento"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:gravity="right"
+            android:paddingBottom="20dp"
+            android:src="@drawable/hecho" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <!-- Table showing the medication data before sending the prescription -->
+            <TableLayout
+                android:id="@+id/tableMedicamentos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="20dp">
+
+                <TableRow android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/chart_overweight"
+                        android:text="@string/QD_Medicamento"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="@color/chart_overweight"
+                        android:text="@string/QD_Dosis"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="intevalo"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/chart_overweight"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="@color/chart_overweight"
+                        android:text="@string/QD_Duracion"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <!-- Button for send the doctor's prescription and doctor's observations -->
+        <Button
+            android:id="@+id/enviarRespuesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/DC_mandar_respuesta"
+            android:textColor="@color/cardview_light_background"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegistryActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin">
+
+        <!-- Input fot "Nombre" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/txt_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/R_Name"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input fot "Apellidos" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_apellidos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inputSpace"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txl_nombre">
+
+            <EditText
+                android:id="@+id/txt_apellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/R_Apellidos"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input fot "Cedula profesional" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_cedula"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inputSpace"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txl_apellidos">
+
+            <EditText
+                android:id="@+id/txt_cedula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/R_CedulaProfesional"
+                android:inputType="textWebEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input fot "Cedula especialidad" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_cedula_especialidad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inputSpace"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txl_cedula">
+
+            <EditText
+                android:id="@+id/txt_cedula_especialidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/R_CedulaEspecialidad"
+                android:inputType="textWebEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input fot "cmcp" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_cmcp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inputSpace"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txl_cedula_especialidad">
+
+            <EditText
+                android:id="@+id/txt_cmcp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/R_CMCP"
+                android:inputType="textWebEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input fot "CURP" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_curp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inputSpace"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txl_cmcp">
+
+            <EditText
+                android:id="@+id/txt_curp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/R_curp"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input fot "Correo electrónico" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_correor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inputSpace"
+            android:inputType="textEmailAddress"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txl_curp">
+
+            <EditText
+                android:id="@+id/txt_correor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/R_CorreroElectronico"
+                android:inputType="textWebEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input fot "Lugar de estudios" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_LugarDeAtencion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inputSpace"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txl_correor">
+
+            <EditText
+                android:id="@+id/txt_LugarDeAtencion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Register_LugarDeEstudios"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input fot "Contraseña" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_passwordr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inputSpace"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txl_LugarDeAtencion"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/txt_passwordr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/R_Contrasena"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input fot "Repetir contraseña" -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_repassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inputSpace"
+            app:errorTextAppearance="@style/error_appearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txl_passwordr"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/txt_repassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/R_RepetirContrasena"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Button for record the information -->
+        <Button
+            android:id="@+id/btn_registrar"
+            style="@style/primaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inputSpace"
+            android:text="@string/R_ButtonRegistrar"
+            app:layout_constraintTop_toBottomOf="@+id/txl_repassword" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

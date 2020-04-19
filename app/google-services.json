@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "903569420839",
+    "firebase_url": "https://pediatria-innovadora.firebaseio.com",
+    "project_id": "pediatria-innovadora",
+    "storage_bucket": "pediatria-innovadora.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903569420839:android:2711de36ea190b83",
+        "android_client_info": {
+          "package_name": "com.diazmiranda.juanjose.mibebe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903569420839-0fbjpk0g9kenjf46fuah4a5lj1bv287c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYZdR_FRFyYpQBvtU9X2O81QZL8xXRDWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903569420839-0fbjpk0g9kenjf46fuah4a5lj1bv287c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903569420839:android:00083466455a35e7191402",
+        "android_client_info": {
+          "package_name": "com.diazmiranda.juanjose.pediatra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903569420839-0fbjpk0g9kenjf46fuah4a5lj1bv287c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYZdR_FRFyYpQBvtU9X2O81QZL8xXRDWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903569420839-0fbjpk0g9kenjf46fuah4a5lj1bv287c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

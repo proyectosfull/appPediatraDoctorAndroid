@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">Pediatra</string>
+    <string name="title_activity_main">Inicio</string>
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+    <string name="nav_header_title">@string/app_name</string>
+    <string name="nav_header_subtitle">pediatra@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="title_activity_settings">Ajustes</string>
+
+    <!-- Notifications -->
+    <string name="notification_name">Nueva consulta</string>
+    <string name="notification_description">Un usuario ha solicitado una consulta con usted</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- Navigation Drawer items -->
+    <string name="nav_inicio">Inicio</string>
+    <string name="nav_perfil">Perfil</string>
+    <string name="nav_citas_pendientes">Consultas pendientes</string>
+    <string name="nav_citas_realizadas">Consultas realizadas</string>
+    <string name="nav_pagos_recibidos">Pagos recibidos</string>
+    <string name="nav_cerrar_sesi_n">Cerrar sesión</string>
+
+    <!-- Layout - Login -->
+    <string name="L_CorreoElectronico">Correo Electrónico</string>
+    <string name="L_ButtonIniciarSesion">Iniciar Sesión</string>
+    <string name="L_LinkToRegister">¿Aún no tienes una cuenta? Registrate aquí</string>
+    <string name="L_Contraseña">Contraseña</string>
+
+    <!-- Layout - Registro -->
+    <string name="R_Name">Nombre</string>
+    <string name="R_Apellidos">Apellidos</string>
+    <string name="R_CedulaProfesional">Cédula Profesional</string>
+    <string name="R_CedulaEspecialidad">Cédula Especialidad</string>
+    <string name="R_CMCP">CMCP</string>
+    <string name="R_curp">CURP</string>
+    <string name="R_CorreroElectronico">Correo Electrónico</string>
+    <string name="R_Contrasena">Contraseña</string>
+    <string name="R_RepetirContrasena">Repetir contraseña</string>
+    <string name="R_ButtonRegistrar">Registrar</string>
+
+    <!--Layout Start-->
+    <string name="I_welcome">
+        Pediatría Innovadora es una App acorde a los nuevos tiempos, en donde tratamos e cubrir
+        las necesidades tanto de los padres como de los profesionales de la Salud responsables
+        del cuidado y manejo de los niños. Mediante el uso cotidiano de la misma, se podrán tener
+        “a la mano” los principales datos del crecimiento y desarrollo de nuestros pequeños pacientes,
+        así como llevar el récord de las vacunas aplicadas y enfermedades padecidas con sus
+        respectivos tratamientos. También se podrán emitir recetas básicas; las cuales podrán
+        ser impresas por los pacientes, en todos aquellos casos en donde no se tenga la oportunidad
+        de ser atendidos inmediatamente en el consultorio. Esperando pueda ser de utilidad en el
+        manejo “On Line” de nuestros pequeños pacientes te damos la más cordial bienvenida!! \n\nAtte:
+        Dr. Juan J Diaz Miranda.- Coordinador\nDerechos Reservados:\nNo. de registro:\n03-2019-070211024300-01\n03-2019-070211084400-01\n
+    </string>
+    <string name="I_bienvenida">Pediatría Innovadora</string>
+
+    <!-- ProfessionalProfile -->
+    <string name="Sin_terminar">Sección en desarrollo</string>
+    <string name="perfil_cambiar_contrase_a">Cambiar Contraseña</string>
+    <string name="perfil_contrase_a_actual">Contraseña actual</string>
+    <string name="perfil_editar_personales">Editar Datos Personales</string>
+    <string name="perfil_nombre_s">Nombre(s)</string>
+    <string name="perfil_nueva_contrase_a">Nueva contraseña</string>
+    <string name="perfil_apellidos">Apellidos</string>
+    <string name="perfil_especialidad">Especialidad</string>
+    <string name="perfil_c_dula">Cédula</string>
+    <string name="perfil_fotograf_a">Selecionar fotografía</string>
+    <string name="perfil_editar_datos">Editar Datos</string>
+    <string name="perfil_costo">Costo de consulta</string>
+    <string name="perfil_lugar_de_atenci_n">Lugar de atención</string>
+    <string name="error">Contraseña requerida</string>
+
+    <!-- Layout Card View Consultas/Payments-->
+    <string name="CV_Usuariodirecto">txt_usuarioDirecto</string>
+    <string name="CV_PacienteParentezco">txt_paciente - parentezco</string>
+    <string name="CV_StatusMoney">- Pagado</string>
+    <string name="CV_DatePayment">18/06/19</string>
+
+    <!-- Layout Bacy Response -->
+    <string name="response_null_citas">¡UPS! Parece que aún no hay citas aquí...</string>
+
+    <!-- Layout Query Description -->
+    <string name="QD_NombreUsuario">U Yadsiry U Cuenca</string>
+    <string name="QD_DependendienteParentezco">Josefín - Madre</string>
+    <string name="QD_StatusMoney">- Pagado</string>
+    <string name="QD_Description">Descripción (sintomas): </string>
+    <string name="QD_FechaDeConsultaS">Fecha de solicitud: </string>
+    <string name="QD_FechaDeConsultaA">Fecha de atención: </string>
+    <string name="QD_PesoTemperatura">Peso y temperatura del paciente: </string>
+    <string name="QD_PesoTemperaturaEj">46.100 kg. - 21C°</string>
+    <string name="QD_DescriptionText">Tiene tos desde hace 2 semanas y fiebre cuando normalmente sólo dura una semana, anexo foto.</string>
+    <string name="QD_ImgAnexada">Imagen anexada: </string>
+    <string name="QD_Nota">Nota</string>
+    <string name="QD_NotaText">Describir su observación.</string>
+    <string name="QD_Receta">Receta</string>
+    <string name="QD_Medicamento">Medicamento</string>
+    <string name="QD_Dosis">Dósis</string>
+    <string name="QD_Duracion">Duración</string>
+    <string name="QD_No">No.</string>
+    <string name="QD_IT">IT</string>
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="multi_select_list_preference_default_value" />
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_image_detalle_consulta">imageDetalleConsulta</string>
+    <string name="DC_describirObservaciones">Describir observaciones</string>
+    <string name="DC_medicamento">Medicamento</string>
+    <string name="DC_dosis">Dósis</string>
+    <string name="DC_duración">Duración</string>
+    <string name="DC_mandar_respuesta">Mandar respuesta</string>
+    <string name="DC_intervalo_de_tiempo">Intervalo de tiempo</string>
+    <string name="QD_intervalo">Intervalo</string>
+    <string name="Register_LugarDeEstudios">Lugar de estudios</string>
+</resources>
